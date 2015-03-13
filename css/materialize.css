@@ -2243,15 +2243,46 @@ td, th {
  }
 
 .collection {
-  background-color: #fff;
+  background-color: #999;
   margin: 0.5rem 0 1rem 0;
   border: 1px solid #e0e0e0;
-  border-radius: 2px; }
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-clip: padding-box;
+  overflow: hidden; }
   .collection .collection-item {
+    background-color: #fff;
     line-height: 1.5rem;
     padding: 10px 20px;
     margin: 0px;
     border-bottom: 1px solid #e0e0e0; }
+    .collection .collection-item.avatar {
+      height: 84px;
+      padding-left: 72px;
+      position: relative; }
+      .collection .collection-item.avatar .circle {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        overflow: hidden;
+        left: 15px;
+        display: inline-block;
+        vertical-align: middle; }
+      .collection .collection-item.avatar i.circle {
+        font-size: 18px;
+        line-height: 42px;
+        color: #fff;
+        background-color: #999;
+        text-align: center; }
+      .collection .collection-item.avatar .title {
+        font-size: 16px; }
+      .collection .collection-item.avatar p {
+        margin: 0; }
+      .collection .collection-item.avatar .secondary-content {
+        position: absolute;
+        top: 16px;
+        right: 16px; }
     .collection .collection-item:last-child {
       border-bottom: none; }
     .collection .collection-item.active {
@@ -2266,32 +2297,13 @@ td, th {
     transition: 0.25s;
     color: #26a69a; }
     .collection a.collection-item:not(.active):hover {
-      background-color: rgba(0, 0, 0, 0.08); }
+      background-color: #ddd; }
   .collection.with-header .collection-header {
+    background-color: #fff;
     border-bottom: 1px solid #e0e0e0;
     padding: 10px 20px; }
   .collection.with-header .collection-item {
     padding-left: 30px; }
-  .collection.pagination {
-    display: inline-block; }
-    .collection.pagination ul {
-      background-color: transparent;
-      font-size: 0;
-      display: inline-block; }
-    .collection.pagination li {
-      display: inline;
-      font-weight: 500;
-      margin: 0px;
-      padding: 0px;
-      font-size: 1rem; }
-      .collection.pagination li a {
-        padding: 0px 5px; }
-      .collection.pagination li.active {
-        background-color: #03a9f4;
-        color: #FFF; }
-      .collection.pagination li:hover {
-        background-color: #e1f5fe; }
-
 .secondary-content {
   float: right;
   color: #26a69a; }
@@ -5172,6 +5184,7 @@ a {
 html {
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
+  background: #FCFCFC;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87); }
   @media only screen and (min-width: 0) {
