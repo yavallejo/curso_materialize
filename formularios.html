@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <title>Clase 16 - Formularios</title>
+  <link rel="stylesheet" href="css/materialize.css">
+
+</head>
+<body>
+<div class="container">
+	<div class="row">
+	    <h3>Input Field</h3>
+		<form action="" class="col s12">
+			<div class="input-field">
+				<input disabled type="text" name="nombre" id="nombre" >
+				<label for="nombre">Nombre</label>
+			</div>
+			<div class="input-field">
+				<input type="text" name="Apellido" id="Apellido" >
+				<label for="Apellido">Apellido</label>
+			</div>
+			<div class="input-field">
+				<input type="email" name="Correo" id="Correo" class="validate">
+				<label for="Correo">Correo</label>
+			</div>
+		</form>
+	</div>
+
+	<div class="row">
+		<h3>Icon prefixes</h3>
+		<form action="" class="col s12">
+			<div class="input-field">
+			    <i class="mdi-action-account-circle prefix red-text"></i>
+				<input type="text" name="nombre" id="nombre">
+				<label for="nombre">Nombre</label>
+			</div>
+		</form>
+	</div>
+
+	<div class="row">
+		<h3>Textarea</h3>
+		<form action="" class="col s12">
+			<div class="input-field">
+				<textarea name="mensaje" id="mensaje" class="materialize-textarea"></textarea>
+				<label for="Mensaje">Mensaje</label>
+			</div>
+		</form>
+	</div>
+	<div class="row">
+		<h3>Select</h3>
+		<form action="" class="col s12">
+			<div class="input-field">
+				<select name="ciudad" id="ciudad">
+					<option value="0" disabled selected>Seleccione su ciudad</option>
+					<option value="Tuluá">Tuluá</option>
+					<option value="Cali">Cali</option>
+					<option value="Buga">Buga</option>
+				</select>
+			</div>
+		</form>
+	</div>
+	<div class="row">
+		<h3>Radio Buttons</h3>
+		<form action="" class="col s12">
+			<div class="input-field">
+				<input type="radio" name="sexo" id="masculino">
+				<label for="masculino">Masculino</label>
+			</div>
+			<div class="input-field">
+				<input type="radio" name="sexo" id="Femenino">
+				<label for="Femenino">Femenino</label>
+			</div>
+		</form>
+	</div>
+	<div class="row">
+		<h3>Casillas de selección</h3>
+		<form action="" class="col s12">
+			<div class="input-field">
+				<input type="checkbox" name="masculino" id="masculinos">
+				<label for="masculinos">Masculino</label>
+			</div>
+			<div class="input-field">
+				<input type="checkbox" name="masculino" id="femeninos">
+				<label for="femeninos">Masculino</label>
+			</div>
+			<div class="input-field">
+				<input type="checkbox" name="masculino" id="mascotas">
+				<label for="mascotas">Masculino</label>
+			</div>
+			<div class="input-field">
+				<input type="checkbox" name="masculino" id="gallinas">
+				<label for="gallinas">Masculino</label>
+			</div>
+		</form>
+	</div>
+	<div class="row">
+		<h3>Swiches</h3>
+		<form action="" class="col s12">
+			<div class="switch">
+				<label>
+					Off
+				<input type="checkbox">
+				<span class="lever"></span>
+				  On
+				</label>
+			</div>
+		</form>
+	</div>
+	<div class="row">
+		<h3>File Input</h3>
+		<form action="" class="col s12">
+			<div class="file-field input-field">
+				<input type="text" class="file-path validate" name="" id="">
+				<div class="btn">
+					<span>Examinar</span>
+					<input type="file">
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="row">
+		<h3>Range</h3>
+		<form action="" class="col s12">
+			<p class="range-field"></p>
+			<input type="range" name="range" id="range" min="0" max="100">
+		</form>
+	</div>
+	<div class="row">
+		<h3>Date picker</h3>
+		<form action="" class="col s12">
+			<input type="date" class="datepicker">
+		</form>
+	</div>
+
+
+</div>
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script>
+  	$(document).ready(function() {
+
+       	// inicializando select
+
+       $('select').material_select();
+
+       // inicializando Datepicker
+
+       $('.datepicker').pickadate({
+       		selectMonths: true,
+       		selectYears: 15
+       });
+
+
+    });
+  </script>
+</body>
+</html>
