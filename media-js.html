@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <title>Clase 19 - Media</title>
+  <link rel="stylesheet" href="css/materialize.css">
+</head>
+<body>
+<div class="container">
+	<!-- <div class="row">
+		<h4>MaterialBox</h4>
+		<div class="col s12 m6">
+			<img class="responsive-img  materialboxed"  src="http://fakeimg.pl/800x600/00CED1/FFF/?text=@yavallejo">
+
+		</div>
+	</div>
+	<div class="row">
+		<h4>MaterialBox Title</h4>
+		<div class="col s12 m6">
+			<img class="responsive-img  materialboxed"  data-caption="Hola soy un title" src="http://fakeimg.pl/800x600/f32aa0/FFF/?text=aprendiendoando">
+
+		</div>
+	</div> -->
+	<div class="row">
+		<div class="col s12">
+			<div class="slider fullscreen">
+				<ul class="slides">
+					<li>
+						<img src="img/slide1.jpg" height="400" width="1024" alt="">
+						<div class="caption center-align">
+							<h3>Title</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nostrum?</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/slide2.jpg" height="400" width="1024" alt="">
+						<div class="caption center-align">
+							<h3>Title</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, modi.</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/slide3.jpg" height="400" width="1024" alt="">
+						<div class="caption center-align">
+							<h3>Title</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, officia.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+   <script type="text/javascript" src="js/jquery.js"></script>
+   <script src="js/materialize.js"></script>
+   <script>
+   		$(function() {
+   			// $(".materialboxed").materailbox();
+
+   			// inicializar el slide3
+
+   			$(".slider").slider({
+   				height : 600,
+   				indicators : false,
+   				transition : 200
+   			});
+
+
+   		});
+   </script>
+
+</body>
+</html>
