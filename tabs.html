@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <title>Clase 22 - Tabs</title>
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+
+	<div class="row">
+		<div class="col s12">
+			<ul class="tabs">
+				<li class="tab col s3"><a href="#python">Python</a></li>
+				<li class="tab col s3"><a href="#django">Django</a></li>
+				<li class="tab col s3"><a href="#javascript">Javascript</a></li>
+				<li class="tab col s3"><a href="#css">CSS</a></li>
+			</ul>
+		</div>
+		<div id="python" class="col s12">Python</div>
+		<div id="django" class="col s12">Django</div>
+		<div id="javascript" class="col s12">Javascript</div>
+		<div id="css" class="col s12">Css</div>
+
+	</div>
+	</div>
+
+
+
+ <script type="text/javascript" src="js/jquery.js"></script>
+ <script src="js/materialize.js"></script>
+
+ <script>
+ jQuery(document).ready(function($) {
+ 	$('ul.tabs').tabs('select_tab','django');
+ });
+ </script>
+
+  </body>
+</html>
