@@ -757,15 +757,15 @@ if ($) { Vel = $.Velocity } else { Vel = Velocity};
       var originalWidth = 0;
       var originalHeight = 0;
       origin.wrap(placeholder);
-      
-      
+
+
       origin.on('click', function(){
         var placeholder = origin.parent('.material-placeholder');
         var windowWidth = window.innerWidth;
         var windowHeight = window.innerHeight;
         var originalWidth = origin.width();
         var originalHeight = origin.height();
-        
+
 
         // If already modal, return to original
         if (doneAnimating === false) {
@@ -776,7 +776,7 @@ if ($) { Vel = $.Velocity } else { Vel = Velocity};
           returnToOriginal();
           return false;
         }
-        
+
 
         // Set states
         doneAnimating = false;
@@ -792,8 +792,8 @@ if ($) { Vel = $.Velocity } else { Vel = Velocity};
           top: 0,
           left: 0
         });
-        
-        
+
+
 
         // Set css on origin
         origin.css({position: 'absolute', 'z-index': 1000})
@@ -916,7 +916,7 @@ if ($) { Vel = $.Velocity } else { Vel = Velocity};
           var windowHeight = window.innerHeight;
           var originalWidth = origin.data('width');
           var originalHeight = origin.data('height');
-       
+
           origin.velocity("stop", true);
           $('#materialbox-overlay').velocity("stop", true);
           $('.materialbox-caption').velocity("stop", true);
@@ -2314,9 +2314,9 @@ $(document).ready(function(){
 		    var offset = $(this.hash).offset().top + 1;
 
 //          offset - 200 allows elements near bottom of page to scroll
-			
+
 	    	$('html, body').animate({ scrollTop: offset - 200 }, {duration: 400, queue: false, easing: 'easeOutCubic'});
-			
+
 		  });
 		});
 		options = options || {
